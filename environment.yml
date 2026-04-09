@@ -1,0 +1,19 @@
+name: seagrass-analysis-binder
+channels: 
+  - conda-forge
+dependencies:
+  - python=3.10
+  - notebook
+  - jupyterlab
+  - pandas
+  - matplotlib
+  - numpy
+  - xarray
+  - rioxarray
+  - rasterio
+  - geopandas
+  - seaborn
+  - pip
+  - pip:
+    - ipykernel
+    
