@@ -31,7 +31,7 @@ Python code for automated processing of Sentinel-2 raster data, includes the dow
 - `00_Copernicus_Downloading` - contains instructions for downloading Sentinel-2 data for a range of years, and code for converting shapefile polygon dimensions to preferred JSON format for defining an AOI in the [Copernicus Data Space Ecosystem](https://dataspace.copernicus.eu/) search engine.
 - `01_access_data` - contains a working code to unzip, convert file type jp2 -> tif, and save scene by scene as netCDF, and delete from memory to prevent memory or RAM issues on any device. Outputs a manifest records of each scenes `.nc` is also saved as CSV.
 - `02_preprocess_imagery` - Clips scenes to the area of interest shapefile and masks cloud cover for L2A scenes to save as `.nc` per scene and manifest record of clipped/masked scenes.
-- `03_calculate_indices` - Calculate spectral vegetation indices - NDVI, NDWI, NDAVI, EVI, SSSII, and NDTI - and also incorporates a correction for water column depth calculating DII or the Depth Invariant Index. Outputs a `indice_summary.csv` of calculated indices.
+- `03_calculate_indices` - Calculate spectral vegetation indices - NDVI, NDWI, NDAVI, EVI, SSSII, NDTI, and DII - and also incorporates a correction for water column depth calculating DII or the Depth Invariant Index. Outputs a `indice_summary.csv` of calculated indices.
 
 ### Water Quality Data Processing
 
